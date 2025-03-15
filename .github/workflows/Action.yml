@@ -11,6 +11,12 @@ on:
   #手动编译
   workflow_dispatch:
     inputs:
+      DEVICE:
+        required: true
+        type: choice
+        options:
+        - REDMI-AX5-JDC
+        - HINLINK-OPC-HT2
       PACKAGE:
         description: '手动调整插件包，多个请用\n符号隔开。'
         required: false
@@ -32,7 +38,7 @@ jobs:
       fail-fast: false
       #max-parallel: 3
       matrix:
-        CONFIG: [REDMI-AX5-JDC,HINLINK-OPC-HT2]
+        CONFIG: ["${{inputs.DEVICE}}"]
         SOURCE: [coolsnowwolf/lede]
         BRANCH: [main]
 
