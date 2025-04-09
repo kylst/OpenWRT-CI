@@ -17,6 +17,7 @@ on:
         options:
         - REDMI-AX5-JDC
         - HINLINK-OPC-HT2
+        - GLINET-GL-MT300N-V2
       #PACKAGE:
       #  description: '手动调整插件包，多个请用\n符号隔开。'
       #  required: false
