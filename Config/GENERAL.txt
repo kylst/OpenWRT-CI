@@ -1,18 +1,4 @@
-#科学插件调整
-CONFIG_PACKAGE_luci-app-homeproxy=y
-CONFIG_PACKAGE_luci-app-nikki=n
-CONFIG_PACKAGE_luci-app-ssr-plus=n
-CONFIG_PACKAGE_luci-app-openclash=n
 
-#增加插件
-CONFIG_PACKAGE_rclone=n
-CONFIG_PACKAGE_luci-app-alist=y
-CONFIG_PACKAGE_luci-app-samba4=y
-CONFIG_PACKAGE_luci-app-autoreboot=y
-CONFIG_PACKAGE_luci-app-diskman=y
-CONFIG_PACKAGE_luci-app-dockerman=n
-CONFIG_PACKAGE_luci-app-filetransfer=y
-CONFIG_PACKAGE_luci-app-zerotier=y
 
 #删除插件
 CONFIG_PACKAGE_luci-app-upnp=n
